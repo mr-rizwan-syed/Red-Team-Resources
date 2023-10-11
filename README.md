@@ -9,6 +9,18 @@ https://github.com/initstring/cloud_enum
 ```
 site:s3.amazonaws.com | site:amazonaws.com "Target_Organization"
 site:amazonaws.com company
+site:"s3-external-1.amazonaws.com" and intext:CONFIDENTIAL
+site:"s3-external-1.amazonaws.com" and intext:TOP SECRET
+site:"s3.amazonaws.com" and intext:CONFIDENTIAL
+site:"s3.dualstack.us-east-1.amazonaws.com" and intext:CONFIDENTIAL
+site:"s3.amazonaws.com" and intext:"tlp:red"
+site:"s3.amazonaws.com" and intext:"tlp:amber"
+site:s3.amazonaws.com and example
+site:s3.amazonaws.com and example.com
+site:s3.amazonaws.com filetype:xls password
+site:http://s3.amazonaws.com intitle:index of bucket
+s3 site:amazonaws.com filetype:log
+site:http://trello.com "aws.amazon.com" "password"
 ```
 ### Lists of IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft (Azure), Oracle (Cloud) and DigitalOcean. Updated every 6 hours.
 ```
