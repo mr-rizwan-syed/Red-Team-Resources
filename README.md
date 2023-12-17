@@ -32,6 +32,11 @@ site:http://blob.core.windows.net "targetdomain.com"
 # GoogleApis
 site:https://googleapis.com "Target_Organization"
 ```
+## Other Online Resources
+1. https://mr-koanti.github.io/github
+2. https://mr-koanti.github.io/shodan
+3. https://dorks.faisalahmed.me/
+
 ### Lists of IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft (Azure), Oracle (Cloud) and DigitalOcean. Updated every 6 hours.
 ```
 https://kaeferjaeger.gay/?dir=ip-ranges/
@@ -41,6 +46,10 @@ https://kaeferjaeger.gay/?dir=ip-ranges/
 https://github.com/zidansec/CloudPeler
 ```
 
-1. https://mr-koanti.github.io/github
-2. https://mr-koanti.github.io/shodan
-3. https://dorks.faisalahmed.me/
+### Passive URL Recon
+```
+https://web.archive.org/web/*/archive.org*
+https://web.archive.org/cdx/search/cdx?url=archive.org&matchType=domain&fl=original&collapse=urlkey&fastLatest=true
+https://web.archive.org/cdx/search/cdx?url=archive.org&output=json
+Tools - Use gau
+```
