@@ -22,6 +22,16 @@ site:http://s3.amazonaws.com intitle:index of bucket
 s3 site:amazonaws.com filetype:log
 site:http://trello.com "aws.amazon.com" "password"
 ```
+
+### Other Google Dorks
+```
+# Azure Blob
+site:http://blob.core.windows.net and "Target_Organization"
+site:http://blob.core.windows.net "targetdomain.com"
+
+# GoogleApis
+site:https://googleapis.com "Target_Organization"
+```
 ### Lists of IP ranges from: Google (Cloud & GoogleBot), Bing (Bingbot), Amazon (AWS), Microsoft (Azure), Oracle (Cloud) and DigitalOcean. Updated every 6 hours.
 ```
 https://kaeferjaeger.gay/?dir=ip-ranges/
@@ -31,3 +41,6 @@ https://kaeferjaeger.gay/?dir=ip-ranges/
 https://github.com/zidansec/CloudPeler
 ```
 
+1. https://mr-koanti.github.io/github
+2. https://mr-koanti.github.io/shodan
+3. https://dorks.faisalahmed.me/
