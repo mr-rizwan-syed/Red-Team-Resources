@@ -49,7 +49,14 @@ https://github.com/zidansec/CloudPeler
 ### Passive URL Recon
 ```
 https://web.archive.org/web/*/archive.org*
+
 https://web.archive.org/cdx/search/cdx?url=archive.org&matchType=domain&fl=original&collapse=urlkey&fastLatest=true
 https://web.archive.org/cdx/search/cdx?url=archive.org&output=json
 Tools - Use gau
+```
+
+### SSL/TLS Enumeration
+```
+cat ipv4_merged.txt | tlsx -json -silent -o certdb.json
+cat certdb.json | jq -c 'select(.probe_status) | { "ip": .ip, "port": .port, "organization_name": .issuer_org[0], "common_name": .subject_cn, "san": .subject_an[] }' 2>/dev/null 1> certdb.json
 ```
