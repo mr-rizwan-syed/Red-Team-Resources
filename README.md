@@ -1,5 +1,10 @@
 # Red-Team-Resources
 
+## Content
+1. **[MindMap Attack Surface Tools Resources v1.2](MindMap_Attack_Surface_Tools_Resources_v1.2.pdf)**
+2. **[External Attack Surface Management in Red Teaming Null Meet PPT](External_Attack_Surface_Management_in_Red_Teaming_Null_Meet_PPT.pdf)**
+3. **[Automating Reconnaissance Workflows for Effective Penetration Testing Null Meet PPT](Automating_Reconnaissance_Workflows_for_Effective_Penetration_Testing_Null_Meet_PPT.pdf)**
+
 ### Cloud Enum
 Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.
 ```
