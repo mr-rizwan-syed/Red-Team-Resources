@@ -1,3 +1,6 @@
+# Name: tldextractor.py - Extract Apex Domains from a list of subdomains 
+# Author: mr-rizwan-syed
+
 import sys
 import tldextract
 
@@ -5,11 +8,11 @@ def is_valid_domain(domain):
     # Check if the domain contains only alphanumeric characters and hyphens
     if not domain.replace('-', '').replace('.', '').isalnum():
         return False
-    
+
     # Check if the domain doesn't end with a period
     if domain.endswith('.'):
         return False
-    
+
     return True
 
 def extract_apex_domains_from_input(input_data):
