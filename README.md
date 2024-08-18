@@ -65,3 +65,10 @@ Tools - Use gau
 cat ipv4_merged.txt | tlsx -json -silent -o certdb.json
 cat certdb.json | jq -c 'select(.probe_status) | { "ip": .ip, "port": .port, "organization_name": .issuer_org[0], "common_name": .subject_cn, "san": .subject_an[] }' 2>/dev/null 1> certdb.json
 ```
+
+### ASN Recon - DNS PTR - To find apex / subdomains
+```
+# Change ASXXXX ASN according to your target
+# bgp.he.net
+whois -h whois.radb.net -- '-i origin AS33353' | grep -Eo "([0-9.]+){4}/[0-9]+" | uniq -u > ipranges.txt && cat ipranges.txt | mapcidr -silent | dnsx -silent -ptr -ro | anew
+```
